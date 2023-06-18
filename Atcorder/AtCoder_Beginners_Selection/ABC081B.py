@@ -1,8 +1,17 @@
-N = int(input("要素数を入力してください: "))
-s_list = []
+N = int(input())
+A = list(map(int, input().split()))
 
-for i in range(N):
-    s = input(f"s{i+1}を入力してください: ")
-    s_list.append(s)
+flag = 0
+count = 0
 
-print(s_list)
+while True:
+    for i in range(N):
+        if A[i] % 2 != 0:
+            flag = 1
+    if flag == 1:
+        break
+    for i in range(N):
+        A[i] = A[i]//2
+        print(A[i])
+    count += 1
+print(count)
