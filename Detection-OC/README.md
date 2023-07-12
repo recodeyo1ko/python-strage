@@ -29,7 +29,7 @@ pip3 install -r requirements.txt
 python3 detect.py
 ```
 
-仮想環境を無効化
+仮想環境の無効化
 
 ```bash
 deactivate
