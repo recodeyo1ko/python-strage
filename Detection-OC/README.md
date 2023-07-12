@@ -1,32 +1,46 @@
-## HOW TO USE
+# HOW TO USE
 
-```
-# 仮想環境の作成
-# python3 -m venv 任意の仮想環境名
+## Python 環境構築
+
+仮想環境の構築
+
+```bash
 python3 -m venv env
-# 仮想環境の有効化
-#Windows
+```
+
+仮想環境の有効化
+
+```bash
+#Windowsの場合
 env\scripts\activate.bat
-#Mac
+#Macの場合
 source env/bin/activate
-# ライブラリのインストール
+```
+
+ライブラリのインストール
+
+```bash
 pip3 install -r requirements.txt
-# 物体検出実行
+```
+
+物体検出実行
+
+```bash
 python3 detect.py
-# 仮想環境の無効化
+```
+
+仮想環境を無効化
+
+```bash
 deactivate
 ```
 
+
 ## memo
 
-```
-ライブラリの出力・保存
+```bash
+ライブラリの出力
 pip3 list
+ライブラリの保存
 pip3  freeze > requirements.txt
-```
-
-```
-ライブラリのインストール
-pip3 install opencv-python
-pip3 install ultralytics
 ```
